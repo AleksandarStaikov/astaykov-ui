@@ -47,9 +47,10 @@ export default {
       color: white;
     }
 
-    .navigation__logo {
+    .navigation__left {
       font-weight: bold;
       font-size: 24px;
+      color: violet;
     }
 
     .navigation__center a {

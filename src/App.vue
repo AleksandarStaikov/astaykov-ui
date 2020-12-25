@@ -5,13 +5,14 @@
     </router-link>
 
     <div class="navigation__center">
-      <router-link :to="{ name: 'Home' }">Education and experience</router-link>
-      <router-link :to="{ name: 'About' }">Personal projects</router-link>
-      <router-link :to="{ name: 'Home' }">Me as a person</router-link>
+      <router-link :to="{ name: 'Education' }">Education</router-link>
+      <router-link :to="{ name: 'Experience' }">Experience</router-link>
+      <router-link :to="{ name: 'MyProjects' }">My projects</router-link>
+      <router-link :to="{ name: 'GetToKnowMe' }">Me as a person</router-link>
     </div>
 
     <div class="navigation__rigth">
-      <router-link :to="{ name: 'Home' }">Contact</router-link>
+      <router-link :to="{ name: 'Contact' }">Contact</router-link>
     </div>
   </nav>
   <router-view />
@@ -28,7 +29,7 @@ export default {
 #app {
   @import url("https://fonts.googleapis.com/css2?family=Montserrat&display=swap");
 
-  font-family: 'Montserrat', Helvetica, Arial, sans-serif;
+  font-family: "Montserrat", Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
@@ -54,11 +55,22 @@ export default {
     .navigation__center a {
       font-weight: normal;
       padding: 0px 20px;
-      color: #62F5E1;
+      color: #62f5e1;
       font-weight: bold;
-      
-      &:hover{
-        color: #22A896;
+
+      &:hover {
+        color: #22a896;
+      }
+    }
+
+    .navigation__rigth {
+      font-size: 18px;
+      border: 2px solid white;
+      border-radius: 15px;
+
+      a {
+        padding: 2px 10px;
+        display: inline-block;
       }
     }
   }

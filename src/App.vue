@@ -35,11 +35,56 @@ export default {
   text-align: center;
   color: #2c3e50;
 
+  @media screen and (min-width: 813px) {
+    nav {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 20px 10%;
+      background-color: #24252a;
+
+      a {
+        text-decoration: none;
+        color: white;
+      }
+
+      .navigation__left {
+        font-weight: bold;
+        font-size: 24px;
+        color: violet;
+      }
+
+      .navigation__center a {
+        font-weight: normal;
+        padding: 0px 20px;
+        color: #62f5e1;
+        font-weight: bold;
+
+        &:hover {
+          color: #22a896;
+        }
+      }
+
+      .navigation__rigth {
+        font-size: 18px;
+        border: 2px solid white;
+        border-radius: 15px;
+
+        a {
+          padding: 2px 10px;
+          display: inline-block;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 813px) {
   nav {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 20px 10%;
+    padding: 20px 2%;
     background-color: #24252a;
 
     a {
@@ -58,6 +103,7 @@ export default {
       padding: 0px 20px;
       color: #62f5e1;
       font-weight: bold;
+      display: none;
 
       &:hover {
         color: #22a896;
@@ -65,6 +111,7 @@ export default {
     }
 
     .navigation__rigth {
+      display: none;
       font-size: 18px;
       border: 2px solid white;
       border-radius: 15px;

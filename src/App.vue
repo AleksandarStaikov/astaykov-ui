@@ -1,7 +1,7 @@
 <template>
   <nav>
     <router-link to="/">
-      <div class="navigation__left">Staiski</div>
+      <div class="navigation__left">Staiksi</div>
     </router-link>
 
     <div class="navigation__center">
@@ -28,7 +28,7 @@ export default {
 <style lang="scss">
 #app {
   @import url("https://fonts.googleapis.com/css2?family=Montserrat&display=swap");
-
+  
   font-family: "Montserrat", Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;

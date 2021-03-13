@@ -1,14 +1,14 @@
 <template>
-  <div class="home__container">
-    <div class="grid__container">
-      <div class="text__holder">
-        <h1>Hello, I am <span>Aleksandar Staykov</span></h1>
-        <p>
-          I am an enthusiastic developer, specializing primarily in back-end
-          development, but not limited to it. I am {{ yearsOld }} years old and
-          I am based in Eindhoven and Sofia
-        </p>
-        <div class="social__links">
+  <div class="home-wrapper">
+    <div class="landing">
+      <div class="landing-left">
+        <div>Hi, I am</div>
+        <div class="name">
+          Aleksandar <br />
+          Staykov
+        </div>
+        <div class="dash"></div>
+        <div class="social-links">
           <a href="https://github.com/AleksandarStaikov" target="_blank"
             ><img alt="GitHub" src="../assets/github.png"
           /></a>
@@ -22,8 +22,18 @@
           /></a>
         </div>
       </div>
-      <div class="image__holder">
-        <div class="image"></div>
+      <div class="landing-center">
+        <img src="@/assets/me-smiling-clear.png" alt="" />
+      </div>
+      <div class="landing-right">
+        <div class="intro-text">
+          Software develoer, passionate about solving difficult IT problems i obicham krasi stoyanov :)
+        </div>
+        <div class="lighter-text">
+          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quia numquam
+          saepe maxime repudiandae! Labore tempora aspernatur minima impedit
+          blanditiis.
+        </div>
       </div>
     </div>
   </div>
@@ -52,6 +62,76 @@ export default {
 
 <style  lang="scss" scoped>
 @import url("https://fonts.googleapis.com/css2?family=Montserrat&display=swap");
+
+.home-wrapper {
+  //border: 1px solid gray;
+  width: 80%;
+  margin: 100px auto 0 auto;
+
+  .landing {
+    display: flex;
+    justify-content: space-between;
+
+    .landing-left {
+      text-align: left;
+      flex: 1;
+
+      div {
+        color: #ef7d31;
+        font-size: 26px;
+      }
+
+      .name {
+        margin-top: 35px;
+        color: #44587c;
+        font-size: 36px;
+        font-weight: bolder;
+      }
+
+      .dash {
+        margin-top: 15px;
+        height: 10px;
+        width: 35px;
+        background-color: #ef7d31;
+      }
+
+      .social-links {
+        margin-top: 50px;
+
+        img {
+          width: 40px;
+          margin-right: 20px;
+        }
+      }
+    }
+
+    .landing-center {
+      flex: 2;
+
+      img {
+        width: 90%;
+        margin: 0 auto;
+      }
+    }
+
+    .landing-right {
+      flex: 1;
+      text-align: right;
+
+      .intro-text {
+        font-weight: bolder;
+        font-size: 22px;
+        color: #44587c;
+        margin-top: 35px;
+        line-height: 30px;
+      }
+
+      .lighter-text {
+        padding-top: 20px;
+      }
+    }
+  }
+}
 
 .image__holder {
   height: 100vh;

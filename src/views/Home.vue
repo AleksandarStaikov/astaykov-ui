@@ -23,16 +23,33 @@
         </div>
       </div>
       <div class="landing-center">
-        <img src="@/assets/me-smiling-clear.png" alt="" />
+        <img src="@/assets/IMG_1027.jpg" alt="" />
       </div>
       <div class="landing-right">
         <div class="intro-text">
-          Software develoer, passionate about solving difficult IT problems i obicham krasi stoyanov :)
+          Back-end developer and DevOps enthusiast based in Eindhoven and Sofia
         </div>
+        <div class="dash-right"></div>
         <div class="lighter-text">
-          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quia numquam
-          saepe maxime repudiandae! Labore tempora aspernatur minima impedit
-          blanditiis.
+          Are <span>you</span> passionate about something?
+          <p>Let's make it happen thogether!</p>
+        </div>
+        <button>Contact me</button>
+      </div>
+    </div>
+    <div class="about-me-section">
+      <div>About me</div>
+      <div class="about-content-wrapper">
+        <div class="left">
+          <div class="age">
+            <img src="@/assets/cake.png" alt="" />
+          </div>
+          <div class="age">
+            <img src="@/assets/bulgaria.png" alt="" />
+          </div>
+        </div>
+        <div class="right">
+          <img src="@/assets/person-working.svg" alt="" />
         </div>
       </div>
     </div>
@@ -111,202 +128,95 @@ export default {
       img {
         width: 90%;
         margin: 0 auto;
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.3),
+          0 6px 20px 0 rgba(0, 0, 0, 0.19);
+        transition: transform 0.5s ease;
+      }
+    }
+
+    .landing-center:hover {
+      img {
+        transform: scale(1.03);
       }
     }
 
     .landing-right {
       flex: 1;
-      text-align: right;
+      text-align: left;
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      justify-content: center;
 
       .intro-text {
         font-weight: bolder;
         font-size: 22px;
         color: #44587c;
-        margin-top: 35px;
         line-height: 30px;
+      }
+
+      .dash-right {
+        margin-top: 15px;
+        height: 5px;
+        width: 50px;
+        background-color: #ef7d31;
       }
 
       .lighter-text {
         padding-top: 20px;
+
+        span {
+          color: #ef7d31;
+          font-weight: bold;
+        }
+      }
+
+      button {
+        border-radius: 10px;
+        border: 2px solid #ef7d31;
+        background-color: #ef7d31;
+        padding: 5px 7px;
+        outline: none;
+        font-size: 20px;
+        cursor: pointer;
+        color: #f3f4f5;
+
+        &:hover {
+          color: #d9e7f5;
+        }
       }
     }
   }
-}
 
-.image__holder {
-  height: 100vh;
-  width: 100%;
-}
+  .about-me-section {
+    background-color: #46434e;
+    border-radius: 30px;
+    margin-top: 50px;
+    padding-top: 30px;
+    color: #f3f4f5;
 
-@media screen and (max-width: 1400px) and (min-width: 813px) {
-  .home__container {
-    background-image: url("../assets/background.jpg");
-    /* Full height */
-    height: 100vh;
+    div {
+      font-size: 24px;
+    }
 
-    /* Center and scale the image nicely */
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-
-    .grid__container {
+    .about-content-wrapper {
       display: flex;
-      align-items: center;
+      margin: 0 auto;
+      width: 80%;
+      padding: 20px 0;
       justify-content: space-between;
-      color: #a593e0;
-      padding: 50px 100px;
 
-      .text__holder {
-        text-align: left;
+      .left {
+        font-weight: bold;
 
-        h1 {
-          span {
-            color: violet;
-          }
-        }
-
-        p {
-          font-family: "Montserrat", Helvetica, Arial, sans-serif;
-          font-size: 20px;
-          font-weight: bold;
-          display: inline-block;
-          width: 70%;
-        }
-
-        .social__links img {
-          height: 50px;
-          width: 50px;
-          margin: 0 15px 0 0;
+        img{
+          height: 100px;
         }
       }
 
-      .image__holder {
-        height: unset;
-        width: unset;
-
-        .image {
-          background-image: url("../assets/IMG_9664 (3).jpg");
+      .right {
+        img {
           height: 400px;
-          width: 400px;
-          background-size: 100%;
-          border-radius: 500px;
-        }
-      }
-    }
-  }
-}
-
-@media screen and (max-width: 1920px) and (min-width: 1401px) {
-  .home__container {
-    background-image: url("../assets/background.jpg");
-    /* Full height */
-    height: 100vh;
-
-    /* Center and scale the image nicely */
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-
-    .grid__container {
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
-      color: #a593e0;
-      padding: 100px 200px;
-
-      .text__holder {
-        font-family: "Montserrat", Helvetica, Arial, sans-serif;
-        text-align: left;
-
-        h1 {
-          span {
-            color: violet;
-          }
-        }
-
-        p {
-          font-size: 20px;
-          font-weight: bold;
-          display: inline-block;
-          width: 50%;
-        }
-
-        .social__links img {
-          height: 50px;
-          width: 50px;
-          margin: 0 15px 0 0;
-        }
-      }
-
-      .image__holder {
-        height: unset;
-        width: unset;
-
-        .image {
-          background-image: url("../assets/IMG_9664 (3).jpg");
-          height: 600px;
-          width: 600px;
-          background-size: 100%;
-          border-radius: 500px;
-        }
-      }
-    }
-  }
-}
-
-@media screen and (min-device-width: 375px) and (max-device-width: 812px) {
-  .home__container {
-    background-image: url("../assets/background.jpg");
-    /* Full height */
-    height: 100vh;
-
-    /* Center and scale the image nicely */
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-
-    .grid__container {
-      display: flex;
-      align-items: center;
-      flex-direction: column-reverse;
-      justify-content: space-between;
-      color: #a593e0;
-      padding: 10px 20px;
-
-      .text__holder {
-        text-align: left;
-
-        h1 {
-          span {
-            color: violet;
-          }
-        }
-
-        p {
-          font-family: "Montserrat", Helvetica, Arial, sans-serif;
-          font-size: 20px;
-          font-weight: bold;
-          display: inline-block;
-          width: 70%;
-        }
-
-        .social__links img {
-          height: 50px;
-          width: 50px;
-          margin: 0 15px 0 0;
-        }
-      }
-
-      .image__holder {
-        height: unset;
-        width: unset;
-
-        .image {
-          background-image: url("../assets/IMG_9664 (3).jpg");
-          height: 200px;
-          width: 200px;
-          background-size: 100%;
-          border-radius: 500px;
         }
       }
     }

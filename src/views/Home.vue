@@ -34,7 +34,7 @@
           Are <span>you</span> passionate about something?
           <p>Let's make it happen thogether!</p>
         </div>
-        <button>Contact me</button>
+        <a href="mailto:aleksandar.staykov.98@gmail.com">Contact me</a>
       </div>
     </div>
     <div class="about-me-section">
@@ -171,7 +171,7 @@ export default {
         }
       }
 
-      button {
+      a {
         border-radius: 10px;
         border: 2px solid #ef7d31;
         background-color: #ef7d31;
@@ -180,6 +180,7 @@ export default {
         font-size: 20px;
         cursor: pointer;
         color: #f3f4f5;
+        text-decoration: none;
 
         &:hover {
           color: #d9e7f5;
@@ -194,6 +195,7 @@ export default {
     margin-top: 50px;
     padding-top: 30px;
     color: #f3f4f5;
+    display: none;
 
     div {
       font-size: 24px;

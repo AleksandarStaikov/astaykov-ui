@@ -5,10 +5,10 @@
         <img src="@/assets/monogram2.svg" alt="monogram" />
       </router-link>
       <div class="right-section">
+        <router-link :to="{ name: 'Education' }"> Education </router-link>
         <router-link :to="{ name: 'Experience' }"> Experience </router-link>
         <router-link :to="{ name: 'About' }"> About </router-link>
-        <router-link :to="{ name: 'Contact' }"> Contact </router-link>
-        <router-link :to="{ name: 'Education' }"> Education </router-link>
+        <!-- <router-link :to="{ name: 'Contact' }"> Contact </router-link> -->
       </div>
     </nav>
   </div>

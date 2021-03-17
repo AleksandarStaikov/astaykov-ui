@@ -79,6 +79,7 @@
             <div>VUE</div>
             <div>CSS</div>
             <div>HTML</div>
+            <div>NPM</div>
             <div>JavaScript</div>
             <div>AWS Amplify</div>
             <div>AWS Route 53</div>
@@ -157,7 +158,11 @@
 <style lang="scss" scoped>
 .experience-wrapper {
   width: 80%;
-  margin: 100px auto 0 auto;
+  margin: 0 auto;
+  
+  & > div {
+    margin-top: 100px;
+  }
 
   .experience-item {
     margin: 30px 0;

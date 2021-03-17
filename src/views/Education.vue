@@ -1,28 +1,5 @@
 <template>
   <div class="education-wrapper">
-    <div class="certification">
-      <h1>Certification</h1>
-      <div class="certificate">
-        <h1>Exam 98-375 Application Development Fundamentals</h1>
-        <span>Microsoft</span>
-      </div>
-      <div class="certificate">
-        <h1>Exam 98-366 Networking Fundamentals</h1>
-        <span>Microsoft</span>
-      </div>
-      <div class="certificate">
-        <h1>Exam 98-349 Windows Operating System Fundamentals</h1>
-        <span>Microsoft</span>
-      </div>
-      <div class="certificate">
-        <h1>Exam 98-361 Software Development Fundamentals</h1>
-        <span>Microsoft</span>
-      </div>
-      <div class="certificate">
-        <h1>Exam 98-364 Database Fundamentals</h1>
-        <span>Microsoft</span>
-      </div>
-    </div>
     <div class="formal-education">
       <h1>Formal Education</h1>
       <div class="list-element">
@@ -49,6 +26,29 @@
           <div class="icon"><i class="fas fa-map-marker-alt"></i></div>
           <div>Sofia, Bulgaria</div>
         </div>
+      </div>
+    </div>
+    <div class="certification">
+      <h1>Certification</h1>
+      <div class="certificate">
+        <h1>Exam 98-375 Application Development Fundamentals</h1>
+        <span>Microsoft</span>
+      </div>
+      <div class="certificate">
+        <h1>Exam 98-366 Networking Fundamentals</h1>
+        <span>Microsoft</span>
+      </div>
+      <div class="certificate">
+        <h1>Exam 98-349 Windows Operating System Fundamentals</h1>
+        <span>Microsoft</span>
+      </div>
+      <div class="certificate">
+        <h1>Exam 98-361 Software Development Fundamentals</h1>
+        <span>Microsoft</span>
+      </div>
+      <div class="certificate">
+        <h1>Exam 98-364 Database Fundamentals</h1>
+        <span>Microsoft</span>
       </div>
     </div>
     <div class="training-and-courses">
@@ -94,31 +94,6 @@
   width: 80%;
   margin: 100px auto 0 auto;
 
-  .certification {
-    .certificate {
-      margin: 1rem 0.7rem;
-      border-radius: 5px;
-      border-left: 5px solid #31efe5;
-      border-bottom: 1px solid rgba(68, 88, 124, 0.3);
-      border-top: 1px solid rgba(68, 88, 124, 0.3);
-      border-right: 1px solid rgba(68, 88, 124, 0.3);
-      padding: 20px 40px;
-      box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.3),
-        0 6px 20px 0 rgba(0, 0, 0, 0.19);
-      transition: transform 0.5s ease;
-      display: inline-block;
-      text-align: left;
-
-      &:hover {
-        transform: scale(1.03);
-      }
-
-      h1 {
-        font-size: 1rem;
-      }
-    }
-  }
-
   .list-element {
     margin: 30px 0;
     border-radius: 5px;
@@ -162,6 +137,31 @@
 
       .icon {
         margin-right: 5px;
+      }
+    }
+  }
+
+  .certification {
+    .certificate {
+      margin: 1rem 0.7rem;
+      border-radius: 5px;
+      border-left: 5px solid #31efe5;
+      border-bottom: 1px solid rgba(68, 88, 124, 0.3);
+      border-top: 1px solid rgba(68, 88, 124, 0.3);
+      border-right: 1px solid rgba(68, 88, 124, 0.3);
+      padding: 20px 40px;
+      box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.3),
+        0 6px 20px 0 rgba(0, 0, 0, 0.19);
+      transition: transform 0.5s ease;
+      display: inline-block;
+      text-align: left;
+
+      &:hover {
+        transform: scale(1.03);
+      }
+
+      h1 {
+        font-size: 1rem;
       }
     }
   }

@@ -159,7 +159,7 @@
 .experience-wrapper {
   width: 80%;
   margin: 0 auto;
-  
+
   & > div {
     margin-top: 100px;
   }
@@ -234,6 +234,10 @@
 
   .personal-projects .experience-item {
     border-left: 5px solid #31efe5;
+
+    .tools .badges div {
+      border: 1px solid #31efe5;
+    }
   }
 }
 </style>

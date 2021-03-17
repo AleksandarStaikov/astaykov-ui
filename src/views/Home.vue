@@ -23,7 +23,7 @@
         </div>
       </div>
       <div class="landing-center">
-        <img src="@/assets/IMG_1027.jpg" alt="" />
+        <img src="@/assets/me.jpg" alt="" />
       </div>
       <div class="landing-right">
         <div class="intro-text">

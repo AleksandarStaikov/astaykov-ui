@@ -2,7 +2,7 @@
   <div class="nav-wrapper">
     <nav>
       <router-link :to="{ name: 'Home' }">
-        <img src="@/assets/monogram2.svg" alt="monogram" />
+        <img src="@/assets/monogram.svg" alt="monogram" />
       </router-link>
       <div class="right-section">
         <router-link :to="{ name: 'Education' }"> Education </router-link>

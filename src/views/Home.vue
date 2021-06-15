@@ -35,6 +35,7 @@
           <p>Let's make it happen thogether!</p>
         </div>
         <a href="mailto:aleksandar.staykov.98@gmail.com">Contact me</a>
+        <a target="_blank" href="./AleksandarStaykovResumeP2.pdf">Get my resume</a>
       </div>
     </div>
     <div class="about-me-section">
@@ -61,7 +62,6 @@ import { computed } from "vue";
 
 export default {
   name: "Home",
-  components: {},
   setup() {
     const yearsOld = computed(function () {
       var birthday = new Date(1998, 12, 22);
@@ -181,6 +181,7 @@ export default {
         cursor: pointer;
         color: #f3f4f5;
         text-decoration: none;
+        margin-bottom: 10px;
 
         &:hover {
           color: #d9e7f5;
@@ -211,7 +212,7 @@ export default {
       .left {
         font-weight: bold;
 
-        img{
+        img {
           height: 100px;
         }
       }

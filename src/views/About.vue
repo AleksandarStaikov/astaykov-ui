@@ -3,7 +3,7 @@
     <section>
       <h1>About me</h1>
       <div>
-        I am {{ yearsOld }} yeaes old and I was born in Bulgaria. A few years
+        I am {{ yearsOld }} years old and I was born in Bulgaria. A few years
         ago I moved to The Netherlands to do my study. I like to travel a lot
         (when possible and safe of course).
       </div>

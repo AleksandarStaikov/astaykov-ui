@@ -35,7 +35,7 @@
           <p>Let's make it happen thogether!</p>
         </div>
         <a href="mailto:aleksandar.staykov.98@gmail.com">Contact me</a>
-        <a target="_blank" href="./AleksandarStaykovResumeP2.pdf">Get my resume</a>
+        <a target="_blank" :href="`${publicPath}AleksandarStaykovResume.pdf`">Get my resume</a>
       </div>
     </div>
     <div class="about-me-section">
@@ -70,8 +70,11 @@ export default {
       ).toFixed(0);
     });
 
+    const publicPath = process.env.BASE_URL
+
     return {
       yearsOld,
+      publicPath
     };
   },
 };

@@ -5,5 +5,19 @@ module.exports = {
                 additionalData: '@import "@/styles/base.scss";'
             }
         }
-    }
+    },
+    configureWebpack: {
+        module: {
+          rules: [
+            {
+              test: /\.(pdf)(\?.*)?$/,
+              use: [
+                {
+                  loader: 'url-loader'
+                }
+              ]
+            }
+          ]
+        }
+      }
 }

@@ -6,7 +6,7 @@
         <div class="main-data">
           <h1>Fontys University Of Applied Science</h1>
           <p class="description">ICT & Software Engineering</p>
-          <div class="date">09/2017 - 07/2021 (Expected)</div>
+          <div class="date">09/2017 - 07/2021</div>
         </div>
         <div class="secondary-data">
           <div class="icon"><i class="fas fa-map-marker-alt"></i></div>

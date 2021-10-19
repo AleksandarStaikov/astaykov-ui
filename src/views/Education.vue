@@ -78,7 +78,7 @@
         <span>Fontys University Specialization</span>
       </div>
       <div class="course">
-        <h1>Deffensive Cybersecurity</h1>
+        <h1>Defensive Cybersecurity</h1>
         <span>Fontys University Specialization</span>
       </div>
       <div class="course">

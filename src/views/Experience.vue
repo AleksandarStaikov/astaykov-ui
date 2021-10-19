@@ -1,12 +1,38 @@
 <template>
   <div class="experience-wrapper">
-    <div class="profecional-experience">
-      <h1>Profecional experience</h1>
+    <div class="professional-experience">
+      <h1>Professional experience</h1>
+      <div class="experience-item">
+        <div class="split">
+          <div class="left">
+            <h1>Capgemini</h1>
+            <div>09/2021 - Ongoing</div>
+          </div>
+          <div class="right">
+            <div class="icon"><i class="fas fa-map-marker-alt"></i></div>
+            <div>Utrecht, The Netherlands</div>
+          </div>
+        </div>
+        <div class="description">
+          Working as a software engineer lead, developing extendable and maintainable software for clients, such as UWV which is dutch govermental agency.
+        </div>
+        <div class="tools">
+          <div class="heading">Used tools and technologies</div>
+          <div class="badges">
+            <div>REST API</div>
+            <div>.NET Core</div>
+            <div>Azure DevOps</div>
+            <div>IIS</div>
+            <div>Micro frontend</div>
+            <div>Microservices</div>
+          </div>
+        </div>
+      </div>
       <div class="experience-item">
         <div class="split">
           <div class="left">
             <h1>Integrace</h1>
-            <div>09/2018 - Ongoing</div>
+            <div>09/2018 - 08/2021</div>
           </div>
           <div class="right">
             <div class="icon"><i class="fas fa-map-marker-alt"></i></div>
@@ -14,7 +40,7 @@
           </div>
         </div>
         <div class="description">
-          Working on developing total solutions for online communication and
+          Worked on developing total solutions for online communication and
           online commerce, including ERP integrations, content management
           applications and product information management systems.
         </div>

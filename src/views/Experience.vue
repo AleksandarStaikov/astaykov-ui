@@ -92,7 +92,30 @@
       <div class="experience-item">
         <div class="split">
           <div class="left">
+            <h1>Crypto alert bot</h1>
+            <div>03/2022 - Ongoing</div>
+          </div>
+        </div>
+        <div class="description">
+          Python bot that tracks configured coins and sends notifications when any of the configured conditions are met.
+        </div>
+        <div class="tools">
+          <div class="heading">Used tools and technologies</div>
+          <div class="badges">
+            <div>Python</div>
+            <div>Pandas (py library)</div>
+            <div>Technical Analysis (py library)</div>
+            <div>AWS Lambda</div>
+            <div>AWS EventBridge</div>
+            <div>Slack</div>
+          </div>
+        </div>
+      </div>
+      <div class="experience-item">
+        <div class="split">
+          <div class="left">
             <h1>My personal Website</h1>
+            <div>07/2020 - Ongoing</div>
           </div>
         </div>
         <div class="description">

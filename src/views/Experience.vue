@@ -97,7 +97,7 @@
           </div>
         </div>
         <div class="description">
-          Python bot that tracks configured coins and sends notifications when any of the configured conditions are met.
+          Python bot that tracks configured coins and sends notifications when configured conditions are met.
         </div>
         <div class="tools">
           <div class="heading">Used tools and technologies</div>

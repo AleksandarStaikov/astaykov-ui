@@ -35,7 +35,7 @@
           <p>Let's make it happen thogether!</p>
         </div>
         <a href="mailto:aleksandar.staykov.98@gmail.com">Contact me</a>
-        <a target="_blank" href="https://drive.google.com/file/d/1e7N4hCh1X1BaJI2E-XYgzprsbm_3uOod/view?usp=sharing">Get my resume</a>
+        <a target="_blank" href="https://drive.google.com/file/d/1zRpbKvHaVqFfR0Mx6qULZIys5yrrbHbS/view">Get my resume</a>
       </div>
     </div>
     <div class="about-me-section">

@@ -86,9 +86,8 @@ export default {
   setup() {
     const yearsOld = computed(function () {
       var birthday = new Date(1998, 12, 22);
-      return new Number(
-        (new Date().getTime() - birthday.getTime()) / 31536000000
-      ).toFixed(0);
+      var difference = (new Date().getTime() - birthday.getTime()) / 31536000000
+      return Math.floor(new Number(difference));
     });
 
     return {

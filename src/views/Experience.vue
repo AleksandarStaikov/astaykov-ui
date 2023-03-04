@@ -9,24 +9,58 @@
             <div>09/2021 - Ongoing</div>
           </div>
           <div class="right">
-            <div class="icon"><i class="fas fa-map-marker-alt"></i></div>
-            <div>Utrecht, The Netherlands</div>
+            <div class="location-item">
+              <div class="icon"><i class="fas fa-map-marker-alt"></i></div>
+              <div>Utrecht, The Netherlands</div>
+            </div>
+            <div class="location-item">
+              <div class="icon"><i class="fas fa-map-marker-alt"></i></div>
+              <div>Amsterdam, The Netherlands</div>
+            </div>
           </div>
         </div>
+
         <div class="description">
-          Working as a software engineer lead, developing extendable and maintainable software for clients, such as UWV which is dutch govermental agency.
+          Working as a software engineer lead, developing extendable and
+          maintainable software for clients.
         </div>
-        <div class="tools">
-          <div class="heading">Used tools and technologies</div>
-          <div class="badges">
-            <div>REST API</div>
-            <div>.NET Core</div>
-            <div>Azure DevOps</div>
-            <div>IIS</div>
-            <div>Micro frontend</div>
-            <div>Microservices</div>
+
+        <div class="client">
+          <h3 class="name">UWV</h3>
+          <div class="client-information">
+            <div class="client-item">
+              <div>07.09.2021 - Ongoing</div>
+              <div class="assignment-description">
+                Involved in the planning and development of microservices, part
+                of the governmental domain. That involves the actual development
+                of the services, setting up build and deploy pipelines
+                for deployments across different network security zones, setting
+                up logging and monitoring, and setting up test automation.
+                Managerial skills such as planning, breaking down and delegating work items,
+                as well as coordination between analysts, developers, and
+                testers, were also applied.
+              </div>
+              <div class="tools">
+                <div class="badges">
+                  <div>REST API</div>
+                  <div>.NET Core</div>
+                  <div>Azure DevOps</div>
+                  <div>IIS</div>
+                  <div>Sonar Cube</div>
+                  <div>SOAP</div>
+                  <div>Microservices</div>
+                  <div>Robot framework</div>
+                  <div>Jira</div>
+                  <div>Promtail</div>
+                  <div>Grafana</div>
+                  <div>Grafana Loki</div>
+                  <div>XL Deploy</div>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
+        
       </div>
       <div class="experience-item">
         <div class="split">
@@ -34,7 +68,7 @@
             <h1>Integrace</h1>
             <div>09/2018 - 08/2021</div>
           </div>
-          <div class="right">
+          <div class="location-item">
             <div class="icon"><i class="fas fa-map-marker-alt"></i></div>
             <div>Eindhoven, The Netherlands</div>
           </div>
@@ -68,7 +102,7 @@
             <h1>Technologica</h1>
             <div>06/2016 - 11/2016</div>
           </div>
-          <div class="right">
+          <div class="location-item">
             <div class="icon"><i class="fas fa-map-marker-alt"></i></div>
             <div>Sofia, Bulgaria</div>
           </div>
@@ -97,7 +131,8 @@
           </div>
         </div>
         <div class="description">
-          Python bot that tracks configured coins and sends notifications when configured conditions are met.
+          Python bot that tracks configured coins and sends notifications when
+          configured conditions are met.
         </div>
         <div class="tools">
           <div class="heading">Used tools and technologies</div>
@@ -250,12 +285,37 @@
         }
       }
 
-      .right {
+      .location-item {
         display: flex;
         font-size: 1vw;
 
         .icon {
           margin-right: 5px;
+        }
+      }
+    }
+
+    .client {
+      text-align: left;
+
+      .client-information {
+        font-size: 0.8vw;
+        font-weight: lighter;
+
+        .client-item {
+          border-left: 2px solid rgba(12, 34, 77, 0.3);
+          display: flex;
+          flex-direction: column;
+          margin-left: 1%;
+          padding-left: 1%;
+
+          .assignment-description {
+            margin-top: 0.3%;
+          }
+
+          .tools {
+            margin-top: 1%;
+          }
         }
       }
     }

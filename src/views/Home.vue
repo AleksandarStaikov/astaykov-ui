@@ -17,9 +17,6 @@
             target="_blank"
             ><img alt="LinkedIn" src="../assets/linkedin.png"
           /></a>
-          <a href="https://www.instagram.com/a_staikov/" target="_blank"
-            ><img alt="Instagram" src="../assets/instagram.svg"
-          /></a>
         </div>
       </div>
       <div class="landing-center">
@@ -27,7 +24,7 @@
       </div>
       <div class="landing-right">
         <div class="intro-text">
-          Back-end developer and DevOps enthusiast based in Eindhoven and Sofia
+          Full-stack (backend-leaning) software engineer with experience in building scalable and reliable applications. Also passionate about DevOps and WEB 3.0. 
         </div>
         <div class="dash-right"></div>
         <div class="lighter-text">
@@ -36,22 +33,6 @@
         </div>
         <a href="mailto:aleksandar.staykov.98@gmail.com">Contact me</a>
         <a target="_blank" href="https://drive.google.com/file/d/1zRpbKvHaVqFfR0Mx6qULZIys5yrrbHbS/view">Get my resume</a>
-      </div>
-    </div>
-    <div class="about-me-section">
-      <div>About me</div>
-      <div class="about-content-wrapper">
-        <div class="left">
-          <div class="age">
-            <img src="@/assets/cake.png" alt="" />
-          </div>
-          <div class="age">
-            <img src="@/assets/bulgaria.png" alt="" />
-          </div>
-        </div>
-        <div class="right">
-          <img src="@/assets/person-working.svg" alt="" />
-        </div>
       </div>
     </div>
   </div>

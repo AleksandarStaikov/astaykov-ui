@@ -24,7 +24,9 @@
       </div>
       <div class="landing-right">
         <div class="intro-text">
-          Full-stack (backend-leaning) software engineer with experience in building scalable and reliable applications. Also passionate about DevOps and WEB 3.0. 
+          Full-stack (backend-leaning) software engineer with experience in
+          building scalable and reliable applications. Also passionate about
+          DevOps and WEB 3.0.
         </div>
         <div class="dash-right"></div>
         <div class="lighter-text">
@@ -32,47 +34,35 @@
           <p>Let's make it happen thogether!</p>
         </div>
         <a href="mailto:aleksandar.staykov.98@gmail.com">Contact me</a>
-        <a target="_blank" href="https://drive.google.com/file/d/1zRpbKvHaVqFfR0Mx6qULZIys5yrrbHbS/view">Get my resume</a>
+        <a
+          target="_blank"
+          href="https://drive.google.com/file/d/1zRpbKvHaVqFfR0Mx6qULZIys5yrrbHbS/view"
+          >Get my resume</a
+        >
       </div>
     </div>
   </div>
 </template>
 
 <script>
-import { computed } from "vue";
-
-export default {
-  name: "Home",
-  setup() {
-    const yearsOld = computed(function () {
-      var birthday = new Date(1998, 12, 22);
-      return new Number(
-        (new Date().getTime() - birthday.getTime()) / 31536000000
-      ).toFixed(0);
-    });
-
-    return {
-      yearsOld,
-    };
-  },
-};
+export default {};
 </script>
 
 <style  lang="scss" scoped>
 @import url("https://fonts.googleapis.com/css2?family=Montserrat&display=swap");
 
 .home-wrapper {
-  //border: 1px solid gray;
   width: 80%;
   margin: 100px auto 0 auto;
 
   .landing {
-    display: flex;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 3%;
     justify-content: space-between;
 
     .landing-left {
       text-align: left;
-      flex: 1;
 
       div {
         color: #ef7d31;
@@ -104,7 +94,12 @@ export default {
     }
 
     .landing-center {
-      flex: 2;
+      @media (min-width: 1025px) {
+        grid-column: 2/4;
+      }
+      @media (max-width: 1024px) {
+        grid-column: 1/3;
+      }
 
       img {
         width: 90%;
@@ -122,12 +117,15 @@ export default {
     }
 
     .landing-right {
-      flex: 1;
       text-align: left;
       display: flex;
       flex-direction: column;
       align-items: flex-start;
       justify-content: center;
+
+      @media (max-width: 1024px) {
+        grid-column: 1 / 3;
+      }
 
       .intro-text {
         font-weight: bolder;
@@ -166,41 +164,6 @@ export default {
 
         &:hover {
           color: #d9e7f5;
-        }
-      }
-    }
-  }
-
-  .about-me-section {
-    background-color: #46434e;
-    border-radius: 30px;
-    margin-top: 50px;
-    padding-top: 30px;
-    color: #f3f4f5;
-    display: none;
-
-    div {
-      font-size: 24px;
-    }
-
-    .about-content-wrapper {
-      display: flex;
-      margin: 0 auto;
-      width: 80%;
-      padding: 20px 0;
-      justify-content: space-between;
-
-      .left {
-        font-weight: bold;
-
-        img {
-          height: 100px;
-        }
-      }
-
-      .right {
-        img {
-          height: 400px;
         }
       }
     }

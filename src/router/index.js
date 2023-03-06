@@ -3,9 +3,8 @@ import Home from '../views/Home.vue'
 import About from '../views/About.vue'
 import Education from '../views/Education.vue'
 import Experience from '../views/Experience.vue'
-import MyProjects from '../views/MyProjects.vue'
-import GetToKnowMe from '../views/GetToKnowMe.vue'
-import Contact from '../views/Contact.vue'
+import Web3 from '../views/LatestPosts/Web3.vue';
+import AlarmClock from '../views/LatestPosts/AlarmClock.vue';
 
 const routes = [
   {
@@ -29,19 +28,14 @@ const routes = [
     component: Education
   },
   {
-    path: '/my-projects',
-    name: 'MyProjects',
-    component: MyProjects
+    path: '/latest/web3',
+    name: 'Web3',
+    component: Web3
   },
   {
-    path: '/get-to-know-me',
-    name: 'GetToKnowMe',
-    component: GetToKnowMe
-  },
-  {
-    path: '/contact',
-    name: 'Contact',
-    component: Contact
+    path: '/latest/alarm-clock',
+    name: 'AlarmClock',
+    component: AlarmClock
   }
 ]
 

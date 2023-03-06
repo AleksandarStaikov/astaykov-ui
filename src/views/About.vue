@@ -16,8 +16,18 @@
 
     <section class="latest-from-me">
       <h1>Latest from me</h1>
-      <div class="">
-        <h4>Content will be added soon :)</h4>
+      <div class="grid">
+        <div class="latest-card" @click="openPost('web3')">
+          <img src="@/assets/web3.0.png" />
+          <h4>Introduction to Web 3.0</h4>
+          <h5>28.05.2022</h5>
+        </div>
+
+        <div class="latest-card" @click="openPost('alarm-clock')">
+          <img src="@/assets/physical-product.jpg" />
+          <h4>The creation of a physical product</h4>
+          <h5>06.03.2023</h5>
+        </div>
       </div>
     </section>
   </div>
@@ -25,11 +35,12 @@
 
 <script>
 import { computed } from "vue";
+import { useRouter } from "vue-router";
 
 export default {
-  name: "Home",
-  components: {},
+  name: "About",
   setup() {
+    const router = useRouter();
     const yearsOld = computed(function () {
       var birthday = new Date(1998, 12, 22);
       var difference =
@@ -37,8 +48,13 @@ export default {
       return Math.floor(new Number(difference));
     });
 
+    const openPost = (postName) => {
+      router.push(`/latest/${postName}`);
+    };
+
     return {
       yearsOld,
+      openPost,
     };
   },
 };
@@ -76,18 +92,45 @@ export default {
 }
 
 .latest-from-me {
-  margin: 70px auto 0 auto;
+  margin: 70px auto 70px auto;
 
-  .grid-content {
+  .grid {
     margin: 3% auto 0 auto;
     display: grid;
-    justify-content: space-evenly;
+    justify-content: center;
     align-items: center;
-    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     gap: 3%;
-    min-width: 400;
     max-width: 1200px;
     text-align: left;
+  }
+
+  .latest-card {
+    border-radius: 3%;
+    background-color: #ebebee;
+    transition: transform 0.5s ease;
+    max-width: 500px;
+
+    &:hover {
+      transform: scale(1.02);
+    }
+
+    img {
+      border-radius: 4%;
+      width: 90%;
+      max-height: 250px;
+      margin: 5%;
+      background-color: #f3f4f5;
+      object-fit: cover;
+    }
+
+    h4 {
+      margin: 0 0 0 5%;
+    }
+
+    h5 {
+      margin: 2% 0 5% 5%;
+    }
   }
 }
 

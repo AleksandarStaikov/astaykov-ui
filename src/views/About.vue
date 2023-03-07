@@ -17,16 +17,16 @@
     <section class="latest-from-me">
       <h1>Latest from me</h1>
       <div class="grid">
-        <div class="latest-card" @click="openPost('web3')">
-          <img src="@/assets/web3.0.png" />
-          <h4>Introduction to Web 3.0</h4>
-          <h5>28.05.2022</h5>
-        </div>
-
         <div class="latest-card" @click="openPost('alarm-clock')">
           <img src="@/assets/physical-product.jpg" />
           <h4>The creation of a physical product</h4>
           <h5>06.03.2023</h5>
+        </div>
+
+        <div class="latest-card" @click="openPost('web3')">
+          <img src="@/assets/web3.0.png" />
+          <h4>Introduction to Web 3.0</h4>
+          <h5>28.05.2022</h5>
         </div>
       </div>
     </section>

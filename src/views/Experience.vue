@@ -46,7 +46,7 @@
                   <div>.NET Core</div>
                   <div>Azure DevOps</div>
                   <div>IIS</div>
-                  <div>Sonar Cube</div>
+                  <div>Sonar Qube</div>
                   <div>SOAP</div>
                   <div>Microservices</div>
                   <div>Robot framework</div>

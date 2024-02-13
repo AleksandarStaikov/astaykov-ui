@@ -7,7 +7,7 @@
         <br />
         <br />
         An interesting project involving hardware, electrical engineering, PCB
-        design, 3D printing and software.
+        design, 3D printing and software (C++).
       </div>
       <img
         class="space-top limited"

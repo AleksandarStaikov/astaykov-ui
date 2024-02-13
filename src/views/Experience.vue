@@ -84,7 +84,8 @@
             <div>SQL</div>
             <div>REST API</div>
             <div>C#</div>
-            <div>ASP .NET MVC</div>
+            <div>.NET MVC</div>
+            <div>Microsoft Azure</div>
             <div>Kendo Grids</div>
             <div>SPA</div>
             <div>JavaScript</div>
